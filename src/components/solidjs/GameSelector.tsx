@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import type { Game } from "@/lib/games";
+import { gameImages } from "@/lib/games";
 
 interface GameSelectorProps {
   game: Game;
@@ -15,12 +16,21 @@ export default function GameSelector(props: GameSelectorProps) {
   return (
     <div
       class={cn(
-        "relative aspect-[4/5] cursor-pointer rounded-lg saturate-50 transition-all duration-200 hover:scale-105 hover:saturate-100",
-        props.game.color,
+        "relative aspect-[2/3] cursor-pointer overflow-hidden rounded-lg saturate-50 transition-all duration-200 hover:scale-105 hover:saturate-100",
         props.isSelected && "ring-primary ring-4 saturate-100",
       )}
       onClick={handleClick}
     >
+      {/* Game Image */}
+      <img
+        src={gameImages[props.game.id]}
+        alt={props.game.title}
+        class="h-full w-full object-cover"
+      />
+
+      {/* Overlay gradient for better text legebility of Game Title */}
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+
       {/* Game Title */}
       <div class="absolute right-0 bottom-0 left-0 p-3">
         <h3 class="text-sm font-semibold text-white drop-shadow-lg">
@@ -33,13 +43,13 @@ export default function GameSelector(props: GameSelectorProps) {
         class={cn(
           "absolute right-3 bottom-3 flex h-6 w-6 items-center justify-center rounded-full border-2 transition-all duration-200",
           props.isSelected
-            ? "bg-primary border-primary"
+            ? "border-white bg-white"
             : "border-white/40 bg-white/20 backdrop-blur-sm",
         )}
       >
         {props.isSelected ? (
           <svg
-            class="text-background size-4"
+            class="size-4 text-black"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

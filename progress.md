@@ -49,3 +49,17 @@ This file is a list of the progress I made and how long I spent doing each one.
   - console logging of selected games for testing
 - [x] update index.astro to use the new GameSelectorSection component
 - [x] implement proper styling with Tailwind CSS classes
+
+## wip: add game images and visual improvements | 25 minutes
+
+- [x] source and add actual game images for all 6 games
+  - fortnite.jpg, minecraft.jpg, call-of-duty.jpg, valorant.jpg, league-of-legends.jpeg, apex-legends.png
+- [x] update games.ts to import and manage game images
+  - removed gradient color backgrounds in favor of actual images
+  - created gameImages object to map game IDs to image sources
+- [x] enhance GameSelector.tsx component with:
+  - actual game images as backgrounds instead of gradient colors
+  - overlay gradient for better text legability
+  - change aspect ratio (2/3 instead of 4/5) based on sourced images
+  - updated checkbox styling with white background when selected for better contrast
+- [x] improved visual hierarchy and accessibility with proper image alt tags
