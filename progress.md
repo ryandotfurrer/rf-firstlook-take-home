@@ -32,3 +32,20 @@ This file is a list of the progress I made and how long I spent doing each one.
   - GameSelector.tsx
   - GameSelectorSection.tsx
 - [x] build out Button.tsx component
+
+## wip: implement game selector functionality | 60 minutes
+
+- [x] enhance Button.tsx with proper variants, sizes, and styling
+- [x] create games.ts data file with game interface and sample data
+- [x] implement GameSelector.tsx component with:
+  - clickable game cards with gradient backgrounds
+  - hover effects and selection states
+  - built-in checkbox indicator
+  - responsive design
+- [x] build GameSelectorSection.tsx with:
+  - state management for selected games using SolidJS signals
+  - grid layout for game cards
+  - Next button that's disabled until at least one game is selected
+  - console logging of selected games for testing
+- [x] update index.astro to use the new GameSelectorSection component
+- [x] implement proper styling with Tailwind CSS classes

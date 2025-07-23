@@ -1,42 +1,11 @@
 ---
-import Button from "@/components/solidjs/Button";
+import GameSelectorSection from "@/components/solidjs/GameSelectorSection";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title="FirstLook.gg Take Home">
     <main class="space-y-12">
         <h1 class="text-center">Player Onboarding</h1>
-        <section
-            class="border rounded-2xl p-12 max-w-screen-lg mx-auto space-y-4"
-        >
-            <h2 class="text-center">Which of these games do you like?</h2>
-            <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-                <div
-                    class="aspect-[4/5] bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg"
-                >
-                </div>
-                <div
-                    class="aspect-[4/5] bg-gradient-to-br from-green-500 to-teal-600 rounded-lg"
-                >
-                </div>
-                <div
-                    class="aspect-[4/5] bg-gradient-to-br from-red-500 to-pink-600 rounded-lg"
-                >
-                </div>
-                <div
-                    class="aspect-[4/5] bg-gradient-to-br from-yellow-500 to-orange-600 rounded-lg"
-                >
-                </div>
-                <div
-                    class="aspect-[4/5] bg-gradient-to-br from-indigo-500 to-blue-600 rounded-lg"
-                >
-                </div>
-                <div
-                    class="aspect-[4/5] bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg"
-                >
-                </div>
-            </div>
-            <Button>Next</Button>
-        </section>
+        <GameSelectorSection client:load />
     </main>
 </BaseLayout>
