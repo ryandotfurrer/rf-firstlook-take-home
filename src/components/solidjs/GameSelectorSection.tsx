@@ -1,4 +1,5 @@
 import { createSignal, For } from "solid-js";
+import { toast, Toaster } from "solid-toast";
 import { games } from "@/lib/games";
 import GameSelector from "./GameSelector";
 import Button from "./Button";
@@ -26,6 +27,23 @@ export default function GameSelectorSection() {
       .map((game) => game.title);
 
     console.log("Selected games:", selectedGameTitles);
+
+    toast.custom(
+      () => (
+        <div class="bg-card rounded-md border p-4 text-sm shadow-sm">
+          <p class="font-medium"> ✅ Game selection logged</p>
+          <p class="text-muted-foreground">Check the browser's console!</p>
+        </div>
+      ),
+      {
+        duration: 3000,
+        position: "bottom-right",
+        style: {
+          "background-color": "var(--primary)",
+          color: "var(--primary-foreground)",
+        },
+      },
+    );
   };
 
   const hasSelectedGames = () => selectedGames().size > 0;

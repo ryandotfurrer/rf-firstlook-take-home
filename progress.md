@@ -21,7 +21,7 @@ This file is a list of the progress I made and how long I spent doing each one.
   - this plugin will ensure that tailwind classes are sorted propeerly according to Tailwind's rules and so there are no specificity issues
 - [x] deployed to Netlify
 
-## wip: create rough draft | 30 minutes
+## wip: create rough draft | 25 minutes
 
 - [x] decide what components are needed for project
 - [x] add alias to tsconfig for better DX
@@ -50,7 +50,7 @@ This file is a list of the progress I made and how long I spent doing each one.
 - [x] update index.astro to use the new GameSelectorSection component
 - [x] implement proper styling with Tailwind CSS classes
 
-## wip: add game images and visual improvements | 25 minutes
+## wip: add game images and visual improvements | 15 minutes
 
 - [x] source and add actual game images for all 6 games
   - fortnite.jpg, minecraft.jpg, call-of-duty.jpg, valorant.jpg, league-of-legends.jpeg, apex-legends.png
@@ -64,7 +64,7 @@ This file is a list of the progress I made and how long I spent doing each one.
   - updated checkbox styling with white background when selected for better contrast
 - [x] improved visual hierarchy and accessibility with proper image alt tags
 
-## wip: UI/UX improvements and footer implementation | 20 minutes
+## wip: UI/UX improvements and footer implementation | 15 minutes
 
 - [x] enhanced ModeToggle component with:
   - proper SVG icons instead of emoji for better consistency
@@ -79,3 +79,11 @@ This file is a list of the progress I made and how long I spent doing each one.
   - adding favicon (eyes emoji) for branding
   - improved main content spacing with top padding
 - [x] cleaned up file structure by removing unused components
+
+## wip: toast notification implementation | 10 minutes
+
+- [x] added solid-toast integration to Layout and GameSelectorSection component:
+  - imported toast and Toaster from solid-toast library
+  - implemented custom toast notification on "Next" button click
+  - styled toast
+- [x] enhanced user feedback with visual confirmation of game selection logging

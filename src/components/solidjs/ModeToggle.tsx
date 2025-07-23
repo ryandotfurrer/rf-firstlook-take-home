@@ -53,7 +53,7 @@ export default function ModeToggle() {
     );
 
   return (
-    <div class="bg-card inline-flex items-center gap-1 rounded-lg border p-1 shadow-sm">
+    <div class="bg-card inline-flex items-center gap-1 rounded-lg border p-1">
       <button
         type="button"
         aria-label="Light mode"
