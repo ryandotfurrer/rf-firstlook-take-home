@@ -1,5 +1,7 @@
 This file is a list of the progress I made and how long I spent doing each one.
 
+**Total Time**: Three hours
+
 [GitHub Repo](https://github.com/ryandotfurrer/rf-firstlook-take-home)
 
 [Live Site](https://rf-firstlook.netlify.app/)
