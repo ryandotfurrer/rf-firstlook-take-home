@@ -63,3 +63,19 @@ This file is a list of the progress I made and how long I spent doing each one.
   - change aspect ratio (2/3 instead of 4/5) based on sourced images
   - updated checkbox styling with white background when selected for better contrast
 - [x] improved visual hierarchy and accessibility with proper image alt tags
+
+## wip: UI/UX improvements and footer implementation | 20 minutes
+
+- [x] enhanced ModeToggle component with:
+  - proper SVG icons instead of emoji for better consistency
+  - better accessibility with proper button types and labels
+  - revamped styling
+- [x] created Footer component with:
+  - personal link to ryanfurrer.com
+  - integrated ModeToggle for better layout
+- [x] restructured layout by:
+  - moving ModeToggle from main layout to footer
+  - removing empty Navbar component
+  - adding favicon (eyes emoji) for branding
+  - improved main content spacing with top padding
+- [x] cleaned up file structure by removing unused components
